@@ -1,0 +1,6 @@
+object DataManager() {
+  val accomodations = mutableListOf<Housing>
+  val favorites = mutableListOf<Housing>
+  
+  createMockData -> hardcoded objects for testing
+}
