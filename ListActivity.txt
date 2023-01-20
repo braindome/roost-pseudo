@@ -1,0 +1,17 @@
+class ListActivity {
+  override fun onCreate {
+  
+    RecyclerView -> setup code, layout manager and inflater here
+    populateListFromFirebase() // Snapshot listener from firebase, adds all objects to DataManager.accomodations
+    
+  }
+  
+  override fun onCreateFilterMenu {
+    inflates filter menu
+  }
+  
+  override fun onCreateSearchBar {
+    creates search bar
+  }
+  
+}
