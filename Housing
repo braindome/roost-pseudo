@@ -1,0 +1,2 @@
+class Housing(
+      documentId, address, size, numberOfRooms, availability, pets, smoking, accessability, rating, landlordProfile, reviews, pictures)
