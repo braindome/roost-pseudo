@@ -1,0 +1,27 @@
+class MainActivity() {
+  FirebaseFirestore
+  FirebaseAuth
+  
+  signInButton.listener {
+    signIn()
+  }
+  
+  signUpButton.listener {
+    signUp()
+  }
+  
+  fun signIn() {
+    if email or password isEmpty { return }
+    auth.signInWithPwAndEmail.addOnCompleteListener { task ->
+      if task is successful -> goToListActivity()
+        else log("Task unsuccessful")
+    }
+  }
+  
+  fun signUp() {
+    auth.createUser.addOnCompleteListener { task ->
+      if task is successful -> goToListActivity()
+        else log("User not created")
+    }
+  }
+  
